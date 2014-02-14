@@ -1,0 +1,37 @@
+Alloy
+    TabGroup
+        Tab(title='Buttons')
+          Window(title='Buttons')
+            Button#buttonsNormalTopLeft(onClick='showAlertDialog') show alert
+            ButtonBar#buttonsButtonbar(onclick='showButtonBarIndex')
+              Labels
+                Label button 1
+                Label button 2
+                Label button 3
+                Label(enabled='false') disabled
+            AlertDialog#buttonsAlertDialog(title='title', message='This is my message', cancel='1')
+              ButtonNames
+                ButtonName OK
+                ButtonName cancel
+        Tab(title='TableViews')
+          Window(title='TableViews')
+            TableView(filterattribute='title')
+              SearchBar(top='0', height='50dp', showCancel='true', barColor='#CCC', color='#000')
+              TableViewSection
+                HeaderView
+                  View(backgroundColor='#DCDCDC', height='50dp')
+                    Label HeaderView
+                FooterView
+                  View(backgroundColor='#EEEEEE', height='50dp')
+                    Label FooterView
+                TableViewRow(title='Row 1')
+                TableViewRow(title='Row 2')
+                TableViewRow(title='Row 3')
+              TableViewSection(headerTitle='Section 2')
+                TableViewRow(title='Row 1')
+                TableViewRow(title='Row 2')
+                TableViewRow(title='Row 3')
+              TableViewSection(headerTitle='Section 3')
+                TableViewRow(title='Row 1')
+                TableViewRow(title='Row 2')
+                TableViewRow(title='Row 3')
